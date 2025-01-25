@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="results.html" method="get">
-        <label>First Name
-            <input name="First_Name" type="text">
-        </label>
-       
+        <div>
+            <label>First Name
+                <input name="First_Name" type="text" placeholder="First name" required>
+            </label>
         
-        <label>Last Name
-            <input name="Last_name" type="text">
-        </label>
-        
+            
+            <label>Last Name
+                <input name="Last_name" type="text" placeholder="Last Name" required>
+            </label>
+        </div>  
 
-        <label>Email
-            <input name="email" type="email">
-        </label>
-        
-        <label>Phone
-            <input name="phone" type="number">
-        </label>
+        <div>
+            <label>Email
+                <input name="email" type="email" placeholder="Email" required>
+            </label>
+            
+            <label>Phone
+                <input name="phone" type="number" placeholder="Phone #" required>
+            </label>
+        </div>
          
-        <label >Password
-            <input name="Password" type="password">
-        </label>
+        <div>
+            <label >Password
+                <input name="Password" type="password" placeholder="Password" required>
+            </label>
 
-        <label >Confirm Password
-            <input name="Confirm_Password" type="password">
-        </label>
+            <label >Confirm Password
+                <input name="Confirm_Password" type="password" placeholder="Confirm Password" required>
+            </label>
+        </div>
 
-        <button>Create Account</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Create Account</button>
 
 
     </form>
